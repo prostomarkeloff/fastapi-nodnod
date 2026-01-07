@@ -1,0 +1,18 @@
+[project]
+name = "fastapi-nodnod"
+version = "0.1.0"
+description = "Nodnod DI integration for FastAPI"
+authors = [{name = "prostomarkeloff", email="prostomarkeloff@was.there" }]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115.0",
+    "starlette>=0.40.0",
+    "pydantic>=2.0.0",
+    "nodnod @ git+https://github.com/timoniq/nodnod.git@dev",
+]
+
+[tool.pyright]
+pythonVersion = "3.13"
+typeCheckingMode = "strict"
+reportMissingTypeStubs = false
